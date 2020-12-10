@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "529227318132",
+    "firebase_url": "https://esol-e802d.firebaseio.com",
+    "project_id": "esol-e802d",
+    "storage_bucket": "esol-e802d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529227318132:android:757186872a64a09f8c6221",
+        "android_client_info": {
+          "package_name": "io.fuse.esol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529227318132-jv0rg063tit1cl12bqf1ekobt1d96us9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn3WxL1St_kF7f4Oec_Izn4NbH10Kxnog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529227318132-jv0rg063tit1cl12bqf1ekobt1d96us9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "529227318132-hre7kibjl5609sjpcksmdh97b1t0peai.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.fuse.esol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
