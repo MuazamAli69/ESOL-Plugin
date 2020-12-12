@@ -12,6 +12,7 @@ import '../../../widgets/primary_button.dart';
 // import 'package:esol/generated/i18n.dart';
 import 'package:esol/screens/signup/verfiy_face.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:esol/generated/i18n.dart';
 
 final List<String> tabsTitles = ['Feed', 'Wallet'];
 
@@ -128,37 +129,75 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
                   : Center(
                       child: Stack(
                         children: [
-                          AlertDialog(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(32.0),
+                          Column(
+                            children: [
+                              CustomRectangle(
+                                borderSize: 20,
+                                borderColor: Colors.white,
+                                height: 30.0,
+                                borderRadius: 40.0,
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.only(left: 18, top: 0),
+                                  child: Container(
+                                    alignment: Alignment.bottomLeft,
+                                    color: Colors.white,
+                                    child: Text(
+                                      I18n.of(context).transactions,
+                                      // style: TextStyle(fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
-                            title: Center(child: Text(" ")),
-                            content: Text(
-                              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
-                              textAlign: TextAlign.center,
-                            ),
-                            actions: [
-                              PrimaryButton(
-                                // buttonContentColor: Colors.white,
-                                icon: Text(''),
-                                labelFontWeight: FontWeight.normal,
-                                label: 'Déjanos Conocerte',
-                                fontSize: 15,
-                                onPressed: () async {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => VeifyFaceDetect(),
-                                  ));
-                                },
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 14,
                               ),
+                              Expanded(
+                                // height:350,
+                                child:
+                               AlertDialog(
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(25.0),
+                                  ),
+                                ),
+                                title: Center(child: Text(" ")),
+                                content: Text(
+                                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
+                                  textAlign: TextAlign.center,
+                                ),
+                                actions: [
+                                  PrimaryButton(
+                                    // buttonContentColor: Colors.white,
+                                    icon: Text(''),
+                                    labelFontWeight: FontWeight.bold,
+                                    label: 'Déjanos Conocerte',
+                                    fontSize: 15,
+                                    onPressed: () async {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(
+                                        builder: (context) => VeifyFaceDetect(),
+                                      ));
+                                    },
+                                  ),
+                                  Container(
+                                    child: Text(
+                                      'Data',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              ),
+                             
                             ],
                           ),
                           Positioned(
-                            top: 5,
-                            left: 120,
+                            top: 70,
+                            left: 118,
                             child: Card(
-                              elevation: 3,
+                              elevation: 0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: const BorderRadius.all(
                                   Radius.circular(32.0),
@@ -166,6 +205,7 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
                               ),
                               child: Container(
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     SizedBox(
                                       height: 3,
@@ -175,14 +215,26 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
                                       fit: BoxFit.cover,
                                       height:
                                           MediaQuery.of(context).size.height /
-                                              12,
+                                              16,
+                                    ),
+                                    SizedBox(
+                                      height: 6,
                                     ),
                                     Text('Importante'),
                                   ],
                                 ),
                                 height: MediaQuery.of(context).size.height / 7,
-                                width: 134,
+                                width: 110,
                                 decoration: BoxDecoration(
+                                    // boxShadow: [
+                                    //   BoxShadow(
+                                    //     color: Colors.grey.withOpacity(0.5),
+                                    //     spreadRadius: 1,
+                                    //     blurRadius: 10,
+                                    //     offset: Offset(
+                                    //         0, 1), // changes position of shadow
+                                    //   ),
+                                    // ],
                                     color: Colors.white,
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(32.0),
@@ -223,7 +275,7 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
           return Scaffold(
             appBar: MyAppBar(
               // Make it Responsive
-              height: MediaQuery.of(context).size.height * 0.3,
+              height: MediaQuery.of(context).size.height * 0.29,
               child: CashHeader(
                 image: null,
                 contactEmpty: false,

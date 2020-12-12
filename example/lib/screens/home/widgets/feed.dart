@@ -100,12 +100,6 @@ class FeedState extends State<Feed> {
                             borderRadius: BorderRadius.circular(28.0),
                           ),
                           child: TransactionTile(transfer: feedList[index])),
-                      // DummyTile(
-                      //   text: Colors.red,
-                      // ),
-                      // DummyTile(
-                      //   text: Colors.green,
-                      // ),
                     ]),
                   ),
                 ),

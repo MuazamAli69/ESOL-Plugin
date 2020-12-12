@@ -50,7 +50,7 @@ class CashHeader extends StatelessWidget {
               color: Theme.of(context).primaryColorDark,
               borderRadius: BorderRadius.only(
                 //bottomLeft: Radius.circular(30.0),
-                bottomRight: Radius.circular(30.0),
+                bottomRight: Radius.circular(40.0),
               ),
             ),
             child: Column(
@@ -74,6 +74,7 @@ class CashHeader extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         HeaderExample(
                           texthide: (textshow && contactEmpty) ? true : false,
@@ -351,17 +352,20 @@ class HeaderExample extends StatelessWidget {
               ? InkWell(
                   onTap: () {},
                   child: Container(
-                    height: 25,
+                    height: 20,
                     width: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.blue[600],
                     ),
-                    child: Image.asset(
-                      imageshow
-                          ? 'assets/images/eye_hide.png'
-                          : 'assets/images/eye_show.png',
-                      filterQuality: FilterQuality.high,
+                    child: Container(
+                      height: 10,
+                      child: Image.asset(
+                        imageshow
+                            ? 'assets/images/eye_hide.png'
+                            : 'assets/images/eye_show.png',
+                        // filterQuality: FilterQuality.high,
+                      ),
                     ),
                   ),
                 )

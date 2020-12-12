@@ -289,7 +289,6 @@ class _EmptyContactsState extends State<EmptyContacts> {
             ),
             expandedHeight: MediaQuery.of(context).size.height * 0.34,
             newHeaderAppBar: CashHeader(
-              // keyFunction: AppKeys.emptyPageKey.currentState.openDrawer(),
               image: null,
               contactEmpty: true,
               imageshow: false,
