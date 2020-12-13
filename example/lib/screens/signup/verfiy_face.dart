@@ -127,7 +127,7 @@ class _VeifyFaceDetectState extends State<VeifyFaceDetect> {
         setState(() {
           verifiedString = 'Face is Verified';
         });
-        await Future.delayed(Duration(seconds: 1), () {});
+        await Future.delayed(Duration(seconds: 8), () {});
         if (verifiedString == 'Face is Verified') {
           Navigator.of(context).pop();
         }
