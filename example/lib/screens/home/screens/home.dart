@@ -154,43 +154,42 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
                               ),
                               Expanded(
                                 // height:350,
-                                child:
-                               AlertDialog(
-                                elevation: 0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(25.0),
-                                  ),
-                                ),
-                                title: Center(child: Text(" ")),
-                                content: Text(
-                                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
-                                  textAlign: TextAlign.center,
-                                ),
-                                actions: [
-                                  PrimaryButton(
-                                    // buttonContentColor: Colors.white,
-                                    icon: Text(''),
-                                    labelFontWeight: FontWeight.bold,
-                                    label: 'Déjanos Conocerte',
-                                    fontSize: 15,
-                                    onPressed: () async {
-                                      Navigator.of(context)
-                                          .push(MaterialPageRoute(
-                                        builder: (context) => VeifyFaceDetect(),
-                                      ));
-                                    },
-                                  ),
-                                  Container(
-                                    child: Text(
-                                      'Data',
-                                      style: TextStyle(color: Colors.white),
+                                child: AlertDialog(
+                                  elevation: 0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(25.0),
                                     ),
                                   ),
-                                ],
+                                  title: Center(child: Text(" ")),
+                                  content: Text(
+                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  actions: [
+                                    PrimaryButton(
+                                      // buttonContentColor: Colors.white,
+                                      icon: Text(''),
+                                      labelFontWeight: FontWeight.bold,
+                                      label: 'Déjanos Conocerte',
+                                      fontSize: 15,
+                                      onPressed: () async {
+                                        Navigator.of(context)
+                                            .push(MaterialPageRoute(
+                                          builder: (context) =>
+                                              VeifyFaceDetect(),
+                                        ));
+                                      },
+                                    ),
+                                    Container(
+                                      child: Text(
+                                        'Data',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              ),
-                             
                             ],
                           ),
                           Positioned(

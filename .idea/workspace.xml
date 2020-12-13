@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940d72dc-4378-4383-8d2b-ce1cd1ec7b7d" name="Default Changelist" comment="" />
+    <list default="true" id="940d72dc-4378-4383-8d2b-ce1cd1ec7b7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/example/lib/screens/home/screens/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/screens/home/screens/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/screens/signup/verfiy_face.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/screens/signup/verfiy_face.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lPG4L6CXzM6LExc96yP20dAgbw" />
   <component name="ProjectViewState">
@@ -32,13 +38,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607849296867">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1607849296867" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607491298743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607491298743" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1607492109058">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1607849306897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607492109058" />
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607849306897" />
   </component>
 </project>

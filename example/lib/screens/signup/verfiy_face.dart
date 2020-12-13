@@ -127,7 +127,7 @@ class _VeifyFaceDetectState extends State<VeifyFaceDetect> {
         setState(() {
           verifiedString = 'Face is Verified';
         });
-        await Future.delayed(Duration(seconds: 4), () {});
+        await Future.delayed(Duration(seconds: 1), () {});
         if (verifiedString == 'Face is Verified') {
           Navigator.of(context).pop();
         }
@@ -145,15 +145,17 @@ class _VeifyFaceDetectState extends State<VeifyFaceDetect> {
 
       Uint8List byteFile = imageFile.readAsBytesSync();
       String base64Image = base64Encode(byteFile);
-      uploadData(
-        base64Image: base64Image,
-        cropImage: true,
-        faceAttributes: true,
-        facialFeatures: true,
-        icaoAttributes: true,
-        template: true,
-        imgPath: dataValue,
-      );
+      (verifiedString == 'Face is Verified')
+          ? () {}
+          : uploadData(
+              base64Image: base64Image,
+              cropImage: true,
+              faceAttributes: true,
+              facialFeatures: true,
+              icaoAttributes: true,
+              template: true,
+              imgPath: dataValue,
+            );
       // responseFromNativeCode().then((value) => print('The Method Channel i'));
     }
   }
